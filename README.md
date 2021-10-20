@@ -8,5 +8,5 @@ Pārbaude no GiHub
 git komandas
 
 - git add .
-- git commit - m "komentārs commitam"
+- git commit -m "komentārs commitam"
 - git push
