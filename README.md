@@ -2,3 +2,4 @@
 Augsta līmeņa programmēšanas mācības, 1. līmenis
 
 Pārbaude
+Pārbaude no GiHub
