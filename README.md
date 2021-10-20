@@ -10,3 +10,5 @@ git komandas
 - git add .
 - git commit -m "komentārs commitam"
 - git push
+
+- git status /redzēt izmaiņas
