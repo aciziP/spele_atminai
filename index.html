@@ -58,7 +58,7 @@
                 <option value = "Zemgale">Zemgale</option>
             </select>
 
-            <button onclick = "saktSpeli()"></button>   <!--saktSpeli() - funkcijas nosaukums-->
+            <button onclick = "saktSpeli()">Sākt</button>   <!--saktSpeli() - funkcijas nosaukums-->
         </div>
 
     </div><!--Beidzās wrapper-->
@@ -68,7 +68,19 @@
     function saktSpeli()    //Funkcija
     {
         let vards = document.querySelector('#vards').value   //# jo id nevis class
+        let vecums = document.querySelector('#vecums').value
+        let regions = document.querySelector('#regions').value
         console.log(vards)
+
+        if(vards == '')
+        {
+            alert('Ievadi vārdu!')
+        }
+        else
+        {
+            //Pārejam uz failu spele.html, pievienojam informāciju
+            window.location='spele.html#'+vards+','+vecums+','+regions   
+        }
 
     }  //Beidzas saktSpeli() funkcija
 
