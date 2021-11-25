@@ -38,4 +38,5 @@ li
     text-align: center;  /*➕*/
 	margin:5px;          /*➕*/
 	font-size: 45px;     /*➕*/
+    line-height: 100px; /*Centrēts vertikāli*/
 }
