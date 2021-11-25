@@ -44,52 +44,76 @@
         </div><!--Beidzās header-->
 
         <div class = "content">
-            <p>Noteikumu teksts</p>
+            <h3 class = "virsraksts">Noteikumu teksts</h3>
 
-            
+            Vārds: <input id = 'vards'/>
+            <br />
+            Vecums: <input id='vecums'/>
+            <br />
+            Reģions: 
+            <select id='regions'>
+                <option value = "Vidzeme">Vidzeme</option>
+                <option value = "Latgale">Latgale</option>
+                <option value = "Kurzeme">Kurzeme</option>
+                <option value = "Zemgale">Zemgale</option>
+            </select>
+
+            <button onclick = "saktSpeli()"></button>   <!--saktSpeli() - funkcijas nosaukums-->
         </div>
 
     </div><!--Beidzās wrapper-->
 
 <script>
-    let vards
-    const valsts = "Latvija"
-    vards = "Laura"
-    let vards2 = `Pēteris ir
-    labais!!!`
-    let vards3 = `Kā tev iet
-    man iet labi`
-    let klase = ['Jānis', 'Laura', 'Jana'] /*Masīvs, array*/
-    klase[3] = 'Uģis'                   /*jauna elementa pievienošana*/
+
+    function saktSpeli()    //Funkcija
+    {
+        let vards = document.querySelector('#vards').value   //# jo id nevis class
+        console.log(vards)
+
+    }  //Beidzas saktSpeli() funkcija
+
+    // let vards
+    // const valsts = "Latvija"
+    // vards = "Laura"
+    // let vards2 = `Pēteris ir
+    // labais!!!`
+    // let vards3 = `Kā tev iet
+    // man iet labi`
+    // let klase = ['Jānis', 'Laura', 'Jana'] /*Masīvs, array*/
+    // klase[3] = 'Uģis'                   /*jauna elementa pievienošana*/
     
-    let skolens = {    /*Objekts*/
-        vards: 'Jānis',
-        vecums: 16,
-        'patīk datori':'jā'
-    }
+    // let skolens = {    /*Objekts*/
+    //     vards: 'Jānis',
+    //     vecums: 16,
+    //     'patīk datori':'jā'
+    // }
 
-    let json = [
-        {
-            vards:'Jānis',
-            vecums:16
-        },
-        {
-            vards:'Pēteris',
-            vecums:16
-        },
-        {
-            vards:'Ilze',
-            vecums:16
-        },
-        {
-            vards:'Indriķis',
-            vecums:15
-        },
+    // let json = [
+    //     {
+    //         vards:'Jānis',
+    //         vecums:16
+    //     },
+    //     {
+    //         vards:'Pēteris',
+    //         vecums:16
+    //     },
+    //     {
+    //         vards:'Ilze',
+    //         vecums:16
+    //     },
+    //     {
+    //         vards:'Indriķis',
+    //         vecums:15
+    //     },
         
-    ]
+    // ]
 
-    console.log("Hello")
+    // console.log("Hello")
 
+    // //Piekļūst HTML dokumentam, ievieto tekstu izvēlētajā klasē
+    // document.querySelector('.virsraksts').innerHTML = vards+vards2+vards3+klase  
+    
+      
 </script>
 
 </body>
