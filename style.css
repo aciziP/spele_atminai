@@ -43,5 +43,8 @@ li
 
 .block div
 {
-    display:none;
+    /*display:none;*/
+    /*Nomainīts uz visibility, lai parādīšanas laikā nemainītu izvietojumu*/
+    visibility: hidden;
+    
 }
